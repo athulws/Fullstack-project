@@ -1,0 +1,44 @@
+.subscription-btn-set{
+    font-size: 14px;
+}
+.subscript-wrappers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+}
+.subscript-section {
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+    padding: 16px 20px;
+    width: 96%;
+}
+.upgrade_now button{
+    height: 44px;
+    width: 10rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(63,131,248);
+    color: white;
+}
+.upgrade_now{
+    text-align: left;
+}
+
+.subscription_overview h5{
+    margin-top: 0.5rem;
+    text-align: left;
+}
+.subscription_overview p{
+    
+    text-align: left;
+}
+#macBook{
+    white-space: nowrap;
+}
+#expired{
+    white-space: nowrap;
+}
+.subscription_overview input{
+    margin-bottom: 1rem;
+}

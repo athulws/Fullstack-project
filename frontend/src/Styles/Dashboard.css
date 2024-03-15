@@ -1,0 +1,334 @@
+body {
+    overflow-x: hidden;
+}
+
+.platform1 {
+    overflow: hidden;
+    /* margin-top: 87px; */
+}
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    /* z-index: 1000; */
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: rgb(243, 244, 246);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    background-color: orange;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li span {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li span:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li span:active,
+.sidebar-nav li span:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand span {
+    color: #999999;
+}
+
+.sidebar-nav>.sidebar-brand span:hover {
+    color: #fff;
+    background: none;
+}
+
+
+
+
+#menu-toggle {
+    font-size: 30px;
+}
+
+#button-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+#button-content button{
+    width: 192px;
+    height: 57px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(63,131,248);
+    color: white;
+    font-weight: 600;
+}
+
+
+#image {
+    height: 62px;
+    width: 98px;
+    /* margin-left: 21px; */
+}
+
+.disp {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#log-out {
+    font-size: 12px;
+    height: 36px;
+    width: 62px;
+    margin-top: 14px;
+    border-radius: 12px;
+    border: none;
+}
+
+#log-out:hover {
+    background-color: black;
+    color: white;
+}
+
+.board-sec {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.board-sec a {
+    text-decoration: none;
+
+}
+
+.dashboard_set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.dashboard_set a{
+    text-decoration: none;
+}
+.dashboard-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 192px;
+    height: 57px;
+    border: none;
+    border-radius: 15px;
+    
+    color: white;
+    font-weight: 600;
+    gap: 30px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.dashboard-content h6{
+    margin-bottom: 0rem;
+}
+.dashboard_titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.dashboard_titles a{
+    text-decoration: none;
+}
+.dashboard_titles_wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 192px;
+    height: 57px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    gap: 30px;
+    padding-left: 10px;
+    color: black;
+    cursor: pointer;
+}
+.dashboard_titles_wrapper h6{
+    margin-bottom: 0rem;
+}
+
+
+/* ..........................new added.............................. */
+
+.sub_heading h4{
+    text-align: left;
+}
+
+.subscriptions img {
+    height: 345px;
+    width: 100%;
+    padding: 18px 18px;
+}
+
+.invoice img {
+    height: 345px;
+    width: 100%;
+    padding: 18px 18px;
+}
+
+.support img {
+    height: 345px;
+    width: 100%;
+    padding: 18px 18px;
+}
+
+.subscriptions {
+    /* border: 1px solid black; */
+    background-color: rgb(229, 231, 235);
+    padding-bottom: 10px;
+}
+
+.invoice {
+    padding-bottom: 10px;
+    background-color: rgb(229, 231, 235);
+}
+
+.support {
+    padding-bottom: 10px;
+    background-color: rgb(229, 231, 235);
+}
+
+.sets {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.paragraph_contents {
+    width: 89%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.headline {
+    width: 89%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.dashboard_wrapper{
+    padding-top: 50px;
+}
+
+/* ........................clickable background........................... */
+.active {
+    background-color: rgb(63,131,248);
+    /* Add any other styling for the active state */
+}
+/* ........................clickable background........................... */
+
+/* ..........................new added.............................. */
+@media only screen and (max-width: 992px) {
+
+    .subscriptions-container,
+    .invoice-container,
+    .support-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .subscriptions,
+    .invoice,
+    .support {
+        width: 60%;
+
+    }
+}
+
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}

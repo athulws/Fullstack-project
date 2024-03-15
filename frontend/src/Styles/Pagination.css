@@ -1,0 +1,17 @@
+.page-numbers p{
+    margin-bottom: 0rem;
+}
+.ul_line{
+    margin-bottom: 0rem;
+}
+.page-containers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.num-pagination{
+    font-weight: 600;
+}
+.page-numbers p{
+    font-size: 14px;
+}

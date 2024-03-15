@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Apple+System');
+
+
+.name_section {
+    text-align: left;
+}
+
+.email_section {
+    text-align: left;
+}
+
+.message_section {
+    text-align: left;
+}
+
+.example_section {
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    margin-top: 3rem;
+}
+.sumbit_button{
+    width: 100%;
+    border: none;
+    background-color: rgb(21,128,61);
+    color: white;
+    border-radius: 8px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.sumbit_button:hover{
+    background-color: rgb(20 83 45);
+}
+
+.contactForm{
+    font-family: 'Apple System', sans-serif;
+}
+.contactus-heading h1 {
+    font-size: 30px;
+    margin-top: 42px;
+    font-family: 'Apple System', sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+.feedback{
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+}
+.feedback_paragraph{
+    text-align: left;
+}
+
+.address_title {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.address_title h6 {
+    margin-bottom: 0rem;
+    font-weight: 600;
+}
+
+
+.address_paragraph {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.address_paragraph p {
+    margin-bottom: 0rem;
+}
+
+.email_content {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.email_content h6 {
+    margin-bottom: 0rem;
+    font-weight: 600;
+}
+
+
+.phone_content {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.phone_content h6 {
+    margin-bottom: 0rem;
+    font-weight: 600;
+}
+
+.phone_content p {
+    margin-bottom: 0rem;
+}

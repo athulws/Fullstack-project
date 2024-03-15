@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Apple+System');
+
+.features-title{
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+.features-title h3{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Apple System', sans-serif;
+}
+.features-title p{
+    font-family: 'Apple System', sans-serif;
+    text-align: center;
+}
+.pulse_sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.pulse {
+    /* background-color: rgb(222,247,236);
+    width: 20%;
+    border-radius: 56px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    border: 0px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    margin: 0px 5px;
+    font-size: 18px;
+    color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 90px;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgb(222,247,236);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.pulse:hover{
+    transform: scale(1.2);
+}
+
+.scissor-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.scissors{
+    /* background-color: rgb(222,247,236);
+    width: 20%;
+    border-radius: 56px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    border: 0px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    margin: 0px 5px;
+    font-size: 18px;
+    color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 90px;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgb(222,247,236);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.scissors:hover{
+    transform: scale(1.2);
+}
+
+.user-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.user{
+    /* background-color: rgb(222,247,236);
+    width: 20%;
+    border-radius: 56px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    border: 0px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    margin: 0px 5px;
+    font-size: 18px;
+    color: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 90px;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgb(222,247,236);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.user:hover{
+    transform: scale(1.2);
+}
+.pulse span{
+    font-size: 45px;
+    color: rgb(14,159,110);
+}
+.scissors span{
+    font-size: 45px;
+    color: rgb(14,159,110);
+}
+.user span{
+    font-size: 45px;
+    color: rgb(14,159,110);
+}
+.feature-content{
+    text-align: center;
+}
+.first-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.second-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.third-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.learn-more span{
+    color: rgb(14,159,110);
+}

@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Apple+System');
+
+.client_container {
+    overflow: hidden;
+}
+
+.client-setUp {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: rgb(107, 114, 128);
+    cursor: pointer;
+}
+
+.client-setUp:hover {
+    color: black;
+}
+
+.client-heading {
+    font-family: 'Apple System', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 64px;
+}
+
+.clinet_names {
+    font-family: 'Apple System', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 0rem;
+}
+
+/* .google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mashable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.google_set {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+
+.airbnb_set {
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+
+.microsoft_set {
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+
+.spotify_set {
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+
+/* #spotify{
+    margin-left: 20px;
+} */
+.mailchimp_set {
+    padding-right: 0rem;
+    padding-left: 0rem;
+}
+
+/* .google{
+    color: rgb(107,114,128);
+    cursor: pointer;
+}
+.google:hover{
+    color: black;
+} */
+.mashable_set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0rem;
+    padding-left: 0rem;
+
+}
+
+.mashable {
+    color: rgb(107, 114, 128);
+    cursor: pointer;
+}
+
+.mashable:hover {
+    color: black;
+}
+
+.client_icon {
+    font-size: 35px;
+    padding-bottom: 6px;
+}
+
+/* .................icon image added..................... */
+
+.icon_img{
+    height: 30px;
+}
+
+/* .................icon image added..................... */
+@media only screen and (max-width: 1200px) {
+
+    /*------------ new added -----------*/
+    .container-cover{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .client-setUp{
+        margin-top: 20px;
+    }
+    /*------------ new added -----------*/
+    .airbnb_set {
+        width: 30%;
+    }
+
+    .google_set {
+        width: 30%;
+    }
+
+    .microsoft_set {
+        width: 30%;
+    }
+
+    .spotify_set {
+        width: 30%;
+    }
+
+    .mailchimp_set {
+        width: 30%;
+    }
+
+    .mashable_set {
+        width: 30%;
+        justify-content: flex-start;
+    }
+
+    .client-side {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 900px) {
+    .airbnb_set {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .google_set {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .microsoft_set {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .spotify_set {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mailchimp_set {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mashable_set {
+        width: 50%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    #airbnb {
+        margin-right: 30px;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .client_icon {
+        font-size: 25px;
+    }
+
+    .clinet_names {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* #spotify {
+        margin-left: 20px;
+    } */
+    /* #mailChimp{
+        margin-left: 10px;
+    } */
+
+    .client-heading{
+        margin-bottom: 20px;
+    }
+}
+

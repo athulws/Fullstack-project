@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Apple+System');
+
+.copy_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Apple System', sans-serif;
+    background-color: rgb(31, 41, 55);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.copyright_content {
+    display: flex;
+
+}
+
+.saas-copyRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.copyRight_link {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.copyRight_link p {
+    margin-bottom: 0rem;
+    color: rgb(107, 114, 128);
+    font-size: 14px;
+}
+
+.copyRight_link p a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.saas-copyRight h4 {
+    margin-bottom: 0rem;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+
+.saas-copyRight p {
+    margin-bottom: 0rem;
+}
+
+.icon_wrapper {
+    font-size: 27px;
+    gap: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: rgb(107, 114, 128);
+}
+.facebook,
+.twitter,
+.instagram,
+.linkedin{
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.facebook:hover,
+.twitter:hover,
+.instagram:hover,
+.linkedin:hover{
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px){
+    .icon_wrapper{
+        justify-content: center;
+        padding: 10px 0px;
+    }
+    .copyright_content{
+        justify-content: center;
+        padding: 10px 0px;
+    }
+}
+@media only screen and (min-width: 600px){
+    .icon_wrapper{
+        justify-content: center;
+        padding: 10px 0px;
+    }
+    .copyright_content{
+        justify-content: center;
+        padding: 10px 0px;
+    }
+}
+@media only screen and (min-width: 992px){
+    .copyright_content {
+        justify-content: flex-start;
+    }
+    .icon_wrapper {
+        justify-content: flex-end;
+    }
+}

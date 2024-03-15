@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Apple+System');
+
+.paymentTypes {
+    font-family: 'Apple System', sans-serif;
+
+}
+
+.paypal_img {
+    height: 90px;
+}
+
+.stripe_img {
+    height: 50px;
+    width: 7rem;
+}
+
+.payment_setting {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; */
+    margin-top: 30px;
+    padding: 30px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.first-option-img {
+    margin: 0 auto;
+    text-align: left;
+    width: 60%;
+    cursor: pointer;
+}
+
+.second-option-img {
+    margin: 0 auto;
+    text-align: left;
+    width: 60%;
+    cursor: pointer;
+}
+
+.pay-method {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 0rem;
+}
+
+.payment_firstOption {
+    position: relative;
+}
+
+.payment_secondOption {
+    position: relative;
+}
+
+.payPal_content {
+    display: none;
+    position: absolute;
+    top: 14%;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(22, 163, 74);
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.payPal_content a {
+    /* text-decoration: none; */
+    color: white;
+}
+
+.payment_firstOption:hover .payPal_content {
+    display: block;
+}
+
+.stripe_content {
+    display: none;
+    position: absolute;
+    top: -19%;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(22, 163, 74);
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.stripe_content a {
+    /* text-decoration: none; */
+    color: white;
+}
+
+.payment_secondOption:hover .stripe_content {
+    display: block;
+}
+
+
+
+.title-boarder {
+    height: 4px;
+    width: 32%;
+    background-color: black;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .payPal_content {
+        top: 14%;
+        right: -66px;
+    }
+    .stripe_content{
+        right: -66px;
+    }
+    .first-option-img {
+        width: 82%;
+    }
+    .second-option-img{
+        width: 82%;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .payPal_content{
+        right: -22px;
+    }
+    .stripe_content {
+        right: -22px;
+    }
+}

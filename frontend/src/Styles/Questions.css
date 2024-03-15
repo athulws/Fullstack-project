@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Apple+System');
+
+.questions-wrapper {
+    margin-top: 64px;
+    background-color: rgb(17,24,39);
+}
+
+.questions-title {
+    font-family: 'Apple System', sans-serif;
+}
+.questions-section-one{
+    font-family: 'Apple System', sans-serif;
+}
+.questions-section-two{
+    font-family: 'Apple System', sans-serif;
+    padding-bottom: 19px;
+}
+.questions-title h1 {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 800;
+    padding-top: 50px;
+    color: rgb(255,255,255);
+}
+
+.separate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.separate h3 {
+    font-size: 18px;
+    margin-bottom: 0rem;
+    color: rgb(255,255,255);
+}
+.answer{
+    text-align: left;
+    color: rgb(116,154,175);
+    padding-bottom: 20px;
+}
+.title_line{
+    color: rgb(116,154,175);
+}
+.question-icon{
+    font-size: 20px;
+    color: rgb(156,163,175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.green-map{
+    color: rgb(25,156,92);
+}

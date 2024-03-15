@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Apple+System');
+
+.payment_setup {
+    margin-top: 64px;
+    font-family: 'Apple System', sans-serif;
+}
+
+.payment_setup h3 {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.payment_setup p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.starter h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-top: 20px;
+}
+
+.company h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-top: 20px;
+}
+
+.enterprise h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-top: 20px;
+}
+
+.starter-para {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.start_set {
+    width: 80%;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.company-para {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.enterprise-para {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.starter {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+    font-family: 'Apple System', sans-serif;
+}
+
+.company {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+    font-family: 'Apple System', sans-serif;
+}
+
+.enterprise {
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+    font-family: 'Apple System', sans-serif;
+}
+
+.doller {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.month {
+    font-size: 16px;
+    color: grey;
+    font-weight: 400;
+}
+
+.detailed-content-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.details-start {
+    text-align: left;
+    width: 74%;
+}
+
+.detailed-content-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.details-company {
+    text-align: left;
+    width: 74%;
+}
+
+.detailed-content-enterprice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.details-enterprice {
+    text-align: left;
+    width: 74%;
+}
+
+.start-btn {
+    width: 137px;
+    height: 40px;
+    background-color: rgb(22, 163, 74);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 2rem;
+}
+.start-btn:hover{
+    background-color: rgb(20 83 45);
+}
+
+.company-btn {
+    width: 137px;
+    height: 40px;
+    background-color: rgb(22, 163, 74);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 2rem;
+}
+.company-btn:hover{
+    background-color: rgb(20 83 45);
+}
+
+.enterprise-btn {
+    width: 137px;
+    height: 40px;
+    background-color: rgb(22, 163, 74);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 2rem;
+}
+.enterprise-btn:hover{
+    background-color: rgb(20 83 45);
+}
+
+@media only screen and (max-width: 600px) {
+    .starter,
+    .company,
+    .enterprise {
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (min-width: 600px){
+    .starter,
+    .company,
+    .enterprise {
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (min-width: 768px){
+    .details-enterprice {
+        
+        width: 68%;
+    }
+}
+@media only screen and (min-width: 992px){
+    .details-enterprice {
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .details-enterprice {
+        width: 72%;
+    }
+    .starter,
+    .company,
+    .enterprise {
+        margin-bottom: 0rem;
+    }
+}

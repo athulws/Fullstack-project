@@ -1,0 +1,17 @@
+.contactForm{
+    padding-top: 3rem;
+}
+.sending{
+    text-align: left;
+}
+.ticket-btn{
+    text-align: left;
+}
+.ticket-btn button {
+    background-color: rgb(21,128,61);
+    color: white;
+    width: 133px;
+    border-radius: 4px;
+    border: none;
+    height: 38px;
+}

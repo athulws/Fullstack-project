@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Apple+System');
+
+.img-paypal{
+    height: 60px;
+}
+.img-stripe{
+    height: 40px;
+}
+.catagories{
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Apple System', sans-seri
+}
+.footer-wrapper{
+    background-color: rgb(17,24,39);
+    padding-top: 50px;
+    padding-bottom: 38px;
+    margin-top: 64px;
+    position: relative;
+}
+.footer_submit {
+    background-color: rgb(21,128,61);
+    color: white;
+    width: 110px;
+    border-radius: 4px;
+    border: none;
+}
+.footer_submit:hover{
+    background-color: rgb(20 83 45);
+}
+.subscribe-setUp{
+    display: flex;
+    gap: 20px;
+}
