@@ -1,11 +1,8 @@
-// const express = require("express")
-// const router = express.Router();
-
 // const transfers = require("../Models/userSchema")
 
 // //register
 
-// router.post("/register", async (req, res) => { //user nte data database il keran
+// exports.userRegist = async (req, res) => { //user nte data database il keran
 //     // console.log(req.body);
 //     try {
 
@@ -32,16 +29,35 @@
 //     } catch (error) {
 //         res.status(422).json(error)
 //     }
-// })
-
-// module.exports = router;
+// };
 
 
-const express = require("express");
-const router = express.Router();
+const transfers = require("../Models/userSchema");
 
-const {userRegistration} = require("../controllers/control")
+// User registration handler
+exports.userRegistration = async (req, res) => {
+    try {
+        // Extract user data from the request body
+        const { name, email, password } = req.body;
 
-router.route('/register').post(userRegistration)
+        // Check if the user already exists in the database
+        const preuser = await transfers.findOne({ email: email });
 
-module.exports = router;
+        if (preuser) {
+            // User already exists, return a 422 status
+            return res.status(422).json("This user is already registered");
+        } else {
+            // Create a new user object
+            const adduser = new transfers({ name, email, password });
+
+            // Save the new user to the database
+            await adduser.save();
+
+            // Return a 201 status with the newly created user object
+            return res.status(201).json(adduser);
+        }
+    } catch (error) {
+        // Handle any errors and return a 422 status with the error message
+        return res.status(422).json({ error: error.message });
+    }
+};
