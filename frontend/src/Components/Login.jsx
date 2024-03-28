@@ -18,7 +18,7 @@ const Login = () => {
                 email,
                 password
             });
-            console.log(response); // Assuming the backend sends a response like "Login Successfully" or error messages
+            alert(response.data); // Assuming the backend sends a response like "Login Successfully" or error messages
             // Handle success or display a message to the user
         } catch (error) {
             console.error('Error:', error.response.data); // Log the error or display an error message to the user
