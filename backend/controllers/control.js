@@ -31,7 +31,7 @@
 //     }
 // };
 
-
+const bcrypt = require('bcryptjs');
 const transfers = require("../Models/userSchema");
 
 // User registration handler
@@ -59,5 +59,25 @@ exports.userRegistration = async (req, res) => {
     } catch (error) {
         // Handle any errors and return a 422 status with the error message
         return res.status(422).json({ error: error.message });
+    }
+};
+
+exports.userLogin = async (req, res) => {
+    const { email, password } = req.body;
+
+    try {
+        const user = await transfers.findOne({ email: email });
+        if (user) {
+            const isPasswordValid = await bcrypt.compare(password, user.password);
+            if (isPasswordValid) {
+                res.json("Login Successfully");
+            } else {
+                res.json("The password is incorrect");
+            }
+        } else {
+            res.json("No record exists");
+        }
+    } catch (error) {
+        res.status(500).json({ error: "Internal Server Error" });
     }
 };

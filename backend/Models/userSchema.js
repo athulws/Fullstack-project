@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
 mongoose.connect('mongodb://localhost:27017/saas')
 
+
+const bcrypt = require('bcryptjs');// install and import "bcryptjs"
+
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -16,6 +19,19 @@ const userSchema = new mongoose.Schema({
         required: true
     }
 })
+
+// -----------------hashing----------------//
+
+//encrypting password before saving
+
+userSchema.pre('save', async function(next){
+    if (!this.isModified('password')) {
+        next()
+    }
+    this.password = await bcrypt.hash(this.password, 10)
+});
+
+// -----------------hashing----------------//
 
 const transfers = new mongoose.model("transfers",userSchema);
 

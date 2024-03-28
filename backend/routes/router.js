@@ -40,8 +40,12 @@
 const express = require("express");
 const router = express.Router();
 
-const {userRegistration} = require("../controllers/control")
+const {userRegistration, userLogin} = require("../controllers/control")
 
+//Registration
 router.route('/register').post(userRegistration)
+
+//Login
+router.route('/login').post(userLogin)
 
 module.exports = router;
