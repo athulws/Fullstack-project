@@ -31,8 +31,12 @@
 //     }
 // };
 
-const bcrypt = require('bcryptjs');
+
 const transfers = require("../Models/userSchema");
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken')
+
+
 
 // User registration handler
 exports.userRegistration = async (req, res) => {
@@ -62,6 +66,15 @@ exports.userRegistration = async (req, res) => {
     }
 };
 
+
+
+const verifyUser = (req, res, next) => {
+    const token = req.cookies.token;
+    console.log(token);
+}
+
+
+// user Login
 exports.userLogin = async (req, res) => {
     const { email, password } = req.body;
 
@@ -70,6 +83,9 @@ exports.userLogin = async (req, res) => {
         if (user) {
             const isPasswordValid = await bcrypt.compare(password, user.password);
             if (isPasswordValid) {
+                const token = jwt.sign({email: user.email}, "jwt-secret-key", {expiresIn:"1d"});
+                res.cookie("token", token);
+            
                 res.json("Login Successfully");
             } else {
                 res.json("The password is incorrect");
