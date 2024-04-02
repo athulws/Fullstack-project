@@ -94,7 +94,7 @@ const Register = () => {
         // console.log(body);
 
         try {
-            const response = await axios.post('http://localhost:8008/register', body);
+            const response = await axios.post(`${process.env.REACT_APP_BACKEND_API_URL}/register`, body);
             console.log(response.data);
             alert('Registration successful');
         } catch (error) {
