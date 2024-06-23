@@ -5,10 +5,13 @@ import '../Styles/Login.css';
 import Footer from './Footer';
 import Copyright from './Copyright';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const navigate = useNavigate()
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -20,6 +23,8 @@ const Login = () => {
             });
             alert(response.data); // Assuming the backend sends a response like "Login Successfully" or error messages
             // Handle success or display a message to the user
+            navigate('/user/dashboard')
+
         } catch (error) {
             console.error('Error:', error.response.data); // Log the error or display an error message to the user
         }

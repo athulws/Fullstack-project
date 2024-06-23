@@ -32,7 +32,7 @@
 // };
 
 
-const transfers = require("../Models/userSchema");
+const Transfers = require("../Models/userSchema");
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken')
 
@@ -45,14 +45,14 @@ exports.userRegistration = async (req, res) => {
         const { name, email, password } = req.body;
 
         // Check if the user already exists in the database
-        const preuser = await transfers.findOne({ email: email });
+        const preuser = await Transfers.findOne({ email: email });
 
         if (preuser) {
             // User already exists, return a 422 status
             return res.status(422).json("This user is already registered");
         } else {
             // Create a new user object
-            const adduser = new transfers({ name, email, password });
+            const adduser = new Transfers({ name, email, password });
 
             // Save the new user to the database
             await adduser.save();
@@ -79,7 +79,7 @@ exports.userLogin = async (req, res) => {
     const { email, password } = req.body;
 
     try {
-        const user = await transfers.findOne({ email: email });
+        const user = await Transfers.findOne({ email: email });
         if (user) {
             const isPasswordValid = await bcrypt.compare(password, user.password);
             if (isPasswordValid) {
